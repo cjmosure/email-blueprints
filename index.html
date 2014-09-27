@@ -15,6 +15,10 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="app/js/bootstrap.min.js"></script>
+	
   </head>
   <body>
   
@@ -32,15 +36,34 @@
       </header>
   </div>
   
+  <div class="wrap precontent">
+	  <div class="container">
+		  <div class="row clearfix">
+			  <div class="col-xs-12">
+				<ul class="list-inline jumpto">
+			    	<li><a href="#q1">Modular Template Patterns</a></li>
+			    	<li><a href="#q2">Responsive - Boxed 2 Column</a></li>
+			    	<li><a href="#q3">Responsive - Boxed 3 Column</a></li>
+			    	<li><a href="#q4">Responsive - Basic Boxed 2 Column</a></li>
+			    	<li><a href="#q5">Responsive - Basic Boxed 2 Column Body Image</a></li>
+			    	<li><a href="#q6">Responsive - Basic Boxed</a></li>
+			    	<li><a href="#q7">Responsive - Boxed Body Image 2 Column</a></li>
+			    </ul>
+			  </div>
+		  </div>
+	  </div>
+  </div>
+  
   <div class="wrap content">
 	  <div class="container">
 		  	<section class="row">
 		  	
-			  	<div class="col-xs-12 preview-area">
+		  		<!-- Start Preview Section -->
+			  	<div id="q1" class="col-xs-12 preview-area">
 			  	
 					<div class="row preview-header">
 						<div class="col-sm-8">
-							<h3 id="q1">Modular Template Patterns</h3>
+							<h3>Modular Template Patterns</h3>
 						</div>
 						<div class="col-sm-4">
 							<a target="_Blank" class="btn btn-sm btn-primary pull-right" href="https://github.com/cjmosure/email-blueprints/raw/master/modular-template-patterns/modular-template-patterns.html">Raw HTML</a>
@@ -50,57 +73,240 @@
 					<div class="row preview-body">
 						<div class="col-sm-4">
 							<h5>HTML</h5>
-							<iframe class="code" src="https://github.com/cjmosure/email-blueprints/raw/master/modular-template-patterns/modular-template-patterns.html" width="100%" height="100px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+							
+							<script type="text/javascript">
+									$.get( "repo/modular-template-patterns/modular-template-patterns.html", function( data ) {
+									  $( "#q1html" ).text( data );
+									});
+							</script>
+							
+							<textarea id="q1html" onclick="this.focus();this.select()" class="code-preview"></textarea>
+							
 						</div>
 						<div class="col-sm-8">
 							<iframe class="preview" src="repo/modular-template-patterns/modular-template-patterns.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
 						</div>
 					</div>
-			  		
-			  		
 			  	</div>
+			  	<!-- End Preview Section -->
 			  	
-			  	<div class="col-xs-12 preview-area">
-			  		<h3 id="q2">Responsive - Boxed 2 Column</h3>
-			  		<a href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_2column_query.html">Raw HTML</a>
-			  		<br />
-			  		<iframe class="preview" src="repo/responsive-templates/base_boxed_2column_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
-			  	</div>
 			  	
-			  	<div class="col-xs-12 preview-area">
-			  		<h3 id="q3">Responsive - Boxed 3 Column</h3>
-			  		<a href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_3column_query.html">Raw HTML</a>
-			  		<br />
-			  		<iframe class="preview" src="repo/responsive-templates/base_boxed_3column_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
-			  	</div>
 			  	
-			  	<div class="col-xs-12 preview-area">
-			  		<h3 id="q4">Responsive - Basic Boxed 2 Column</h3>
-			  		<a href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_basic_2column_query.html">Raw HTML</a>
-			  		<br />
-			  		<iframe class="preview" src="repo/responsive-templates/base_boxed_basic_2column_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
-			  	</div>
 			  	
-			  	<div class="col-xs-12 preview-area">
-			  		<h3 id="q5">Responsive - Basic Boxed 2 Column Body Image</h3>
-			  		<a href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_basic_body_image_query.html">Raw HTML</a>
-			  		<br />
-			  		<iframe class="preview" src="repo/responsive-templates/base_boxed_basic_body_image_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
-			  	</div>
+			  	<!-- Start Preview Section -->
+			  	<div id="q2" class="col-xs-12 preview-area">
 			  	
-			  	<div class="col-xs-12 preview-area">
-			  		<h3 id="q6">Responsive - Basic Boxed</h3>
-			  		<a href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_basic_query.html">Raw HTML</a>
-			  		<br />
-			  		<iframe class="preview" src="repo/responsive-templates/base_boxed_basic_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+					<div class="row preview-header">
+						<div class="col-sm-8">
+							<h3>Responsive - Boxed 2 Column</h3>
+						</div>
+						<div class="col-sm-4">
+							<a target="_Blank" class="btn btn-sm btn-primary pull-right" href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_2column_query.html">Raw HTML</a>
+						</div>
+					</div>
+					
+					<div class="row preview-body">
+						<div class="col-sm-4">
+							<h5>HTML</h5>
+							
+							<script type="text/javascript">
+									$.get( "repo/responsive-templates/base_boxed_2column_query.html", function( data ) {
+									  $( "#q2html" ).text( data );
+									});
+							</script>
+							
+							<textarea id="q2html" onclick="this.focus();this.select()" class="code-preview"></textarea>
+							
+						</div>
+						<div class="col-sm-8">
+							<iframe class="preview" src="repo/responsive-templates/base_boxed_2column_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+						</div>
+					</div>
 			  	</div>
+			  	<!-- End Preview Section -->
 			  	
-			  	<div class="col-xs-12 preview-area">
-			  		<h3 id="q6">Responsive - Boxed Body Image 2 Column</h3>
-			  		<a href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_body_image_2column_query.html">Raw HTML</a>
-			  		<br />
-			  		<iframe class="preview" src="repo/responsive-templates/base_boxed_body_image_2column_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+			  	
+			  	
+			  	
+			  	
+			  	
+			  	<!-- Start Preview Section -->
+			  	<div id="q3" class="col-xs-12 preview-area">
+			  	
+					<div class="row preview-header">
+						<div class="col-sm-8">
+							<h3>Responsive - Boxed 3 Column</h3>
+						</div>
+						<div class="col-sm-4">
+							<a target="_Blank" class="btn btn-sm btn-primary pull-right" href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_3column_query.html">Raw HTML</a>
+						</div>
+					</div>
+					
+					<div class="row preview-body">
+						<div class="col-sm-4">
+							<h5>HTML</h5>
+							
+							<script type="text/javascript">
+									$.get( "repo/responsive-templates/base_boxed_3column_query.html", function( data ) {
+									  $( "#q3html" ).text( data );
+									});
+							</script>
+							
+							<textarea id="q3html" onclick="this.focus();this.select()" class="code-preview"></textarea>
+							
+						</div>
+						<div class="col-sm-8">
+							<iframe class="preview" src="repo/responsive-templates/base_boxed_3column_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+						</div>
+					</div>
 			  	</div>
+			  	<!-- End Preview Section -->
+			  	
+			  	
+			  	
+			  	
+			  	<!-- Start Preview Section -->
+			  	<div id="q4" class="col-xs-12 preview-area">
+			  	
+					<div class="row preview-header">
+						<div class="col-sm-8">
+							<h3>Responsive - Basic Boxed 2 Column</h3>
+						</div>
+						<div class="col-sm-4">
+							<a target="_Blank" class="btn btn-sm btn-primary pull-right" href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_basic_2column_query.html">Raw HTML</a>
+						</div>
+					</div>
+					
+					<div class="row preview-body">
+						<div class="col-sm-4">
+							<h5>HTML</h5>
+							
+							<script type="text/javascript">
+									$.get( "repo/responsive-templates/base_boxed_basic_2column_query.html", function( data ) {
+									  $( "#q4html" ).text( data );
+									});
+							</script>
+							
+							<textarea id="q4html" onclick="this.focus();this.select()" class="code-preview"></textarea>
+							
+						</div>
+						<div class="col-sm-8">
+							<iframe class="preview" src="repo/responsive-templates/base_boxed_basic_2column_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+						</div>
+					</div>
+			  	</div>
+			  	<!-- End Preview Section -->
+			  	
+			  	
+			  	
+			  	
+			  	
+			  	
+			  	<!-- Start Preview Section -->
+			  	<div id="q5" class="col-xs-12 preview-area">
+			  	
+					<div class="row preview-header">
+						<div class="col-sm-8">
+							<h3>Responsive - Basic Boxed 2 Column Body Image</h3>
+						</div>
+						<div class="col-sm-4">
+							<a target="_Blank" class="btn btn-sm btn-primary pull-right" href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_basic_body_image_query.html">Raw HTML</a>
+						</div>
+					</div>
+					
+					<div class="row preview-body">
+						<div class="col-sm-4">
+							<h5>HTML</h5>
+							
+							<script type="text/javascript">
+									$.get( "repo/responsive-templates/base_boxed_basic_body_image_query.html", function( data ) {
+									  $( "#q5html" ).text( data );
+									});
+							</script>
+							
+							<textarea id="q5html" onclick="this.focus();this.select()" class="code-preview"></textarea>
+							
+						</div>
+						<div class="col-sm-8">
+							<iframe class="preview" src="repo/responsive-templates/base_boxed_basic_body_image_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+						</div>
+					</div>
+			  	</div>
+			  	<!-- End Preview Section -->
+			  	
+			  	
+			  	
+			  	
+			  	<!-- Start Preview Section -->
+			  	<div id="q6" class="col-xs-12 preview-area">
+			  	
+					<div class="row preview-header">
+						<div class="col-sm-8">
+							<h3>Responsive - Basic Boxed</h3>
+						</div>
+						<div class="col-sm-4">
+							<a target="_Blank" class="btn btn-sm btn-primary pull-right" href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_basic_query.html">Raw HTML</a>
+						</div>
+					</div>
+					
+					<div class="row preview-body">
+						<div class="col-sm-4">
+							<h5>HTML</h5>
+							
+							<script type="text/javascript">
+									$.get( "repo/responsive-templates/base_boxed_basic_query.html", function( data ) {
+									  $( "#q6html" ).text( data );
+									});
+							</script>
+							
+							<textarea id="q6html" onclick="this.focus();this.select()" class="code-preview"></textarea>
+							
+						</div>
+						<div class="col-sm-8">
+							<iframe class="preview" src="repo/responsive-templates/base_boxed_basic_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+						</div>
+					</div>
+			  	</div>
+			  	<!-- End Preview Section -->
+			  	
+			  	
+			  	
+			  	
+			  	
+			  	<!-- Start Preview Section -->
+			  	<div id="q7" class="col-xs-12 preview-area">
+			  	
+					<div class="row preview-header">
+						<div class="col-sm-8">
+							<h3>Responsive - Boxed Body Image 2 Column</h3>
+						</div>
+						<div class="col-sm-4">
+							<a target="_Blank" class="btn btn-sm btn-primary pull-right" href="https://github.com/cjmosure/email-blueprints/raw/master/responsive-templates/base_boxed_body_image_2column_query.html">Raw HTML</a>
+						</div>
+					</div>
+					
+					<div class="row preview-body">
+						<div class="col-sm-4">
+							<h5>HTML</h5>
+							
+							<script type="text/javascript">
+									$.get( "repo/responsive-templates/base_boxed_body_image_2column_query.html", function( data ) {
+									  $( "#q7html" ).text( data );
+									});
+							</script>
+							
+							<textarea id="q7html" onclick="this.focus();this.select()" class="code-preview"></textarea>
+							
+						</div>
+						<div class="col-sm-8">
+							<iframe class="preview" src="repo/responsive-templates/base_boxed_body_image_2column_query.html" width="100%" height="400px" frameborder="0" scrolling="auto"> Ay, you need iframes for this type of thing... </iframe>
+						</div>
+					</div>
+			  	</div>
+			  	<!-- End Preview Section -->
+			  	
+			  	
+
 		  	</section>
 	  </div>
   </div>
@@ -120,8 +326,8 @@
   
   
     
-	<script src="https//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="app/js/bootstrap.min.js"></script>
+	
+	
     
   </body>
 </html>
