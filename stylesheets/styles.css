@@ -183,6 +183,13 @@ footer {
   bottom:50px;
 }
 
+/* CJ New Styles */
+
+iframe.preview {
+	
+}
+
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
