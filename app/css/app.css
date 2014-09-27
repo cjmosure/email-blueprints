@@ -16,3 +16,11 @@
 .preview-area {
 	padding: 25px 0px;
 }
+
+.preview-header {
+	padding:25px 0px;
+}
+.preview-header h3 {
+	padding:0px;
+	margin:0px;
+}
