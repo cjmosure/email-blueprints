@@ -18,6 +18,16 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="app/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		//<![CDATA[
+			$(window).load(function() { // makes sure the whole site is loaded
+				$('#status').fadeOut(); // will first fade out the loading animation
+				$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+				$('body').delay(350).css({'overflow':'visible'});
+			})
+		//]]>
+	</script>
 	
   </head>
   <body>
@@ -1526,4 +1536,12 @@
 	
     
   </body>
+
+  
+	<!-- Preloader -->
+	<div id="preloader">
+	    <div id="status">&nbsp;</div>
+	</div>
+
+
 </html>
